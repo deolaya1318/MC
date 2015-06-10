@@ -29,13 +29,13 @@ Luego de descomprimir el ejecutable de lammps requerimos del siguiente código:
 
 En esta clase se implemento el siguiente ciclo para realizar las 25 graficas:
 
--t = linspace(0,2*pi,100)
--A = 1
--delta = 0
--B = A
--fig=figure(figsize=(12,12))
--c = 1
--for a in range(5):
+- t = linspace(0,2*pi,100)
+- A = 1
+- delta = 0
+- B = A
+- fig=figure(figsize=(12,12))
+- c = 1
+- for a in range(5):
 -    for b in range(5):
 -        delta = 0
 -        x = A*cos((a+1)*t+delta)
