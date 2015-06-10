@@ -25,3 +25,36 @@ Luego de descomprimir el ejecutable de lammps requerimos del siguiente código:
 - grep "^1 " dump.indent | head -1, realizar un loop variando el grep desde 1 hasta 420
 - con el archivo guardado se debe hacer awk para obtener las columnas 4 y 5 que corresponden a las posiciones x, y de los 420 átomos
 
+##10 de Junio:
+
+Se puede realizar una figura de lissajous en un notebook usando el siguiente código:
+
+t = linspace(0,2*pi,100)
+A = 1
+B = A
+a = 1
+b = 2
+delta = pi/2
+x = A*cos(a*t+delta)
+y = B*sin(b*t)
+plot(x,y)
+
+se implemento el siguiente ciclo para realizar las 25 graficas:
+
+fig=figure(figsize=(12,12))
+c = 1
+for a in range(5):
+    for b in range(5):
+        delta = 0
+        x = A*cos((a+1)*t+delta)
+        y = B*sin((b+1)*t)
+        subplot(5,5,c)
+        axis("off")
+        axis("equal")
+        plot(x,y)
+        c = c+1
+        
+las graficas obtenidas son
+
+![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/lissajous.png)
+
