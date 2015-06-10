@@ -27,7 +27,7 @@ Luego de descomprimir el ejecutable de lammps requerimos del siguiente código:
 
 ##10 de Junio:
 
-En esta clase se implemento el siguiente ciclo para realizar las 25 graficas:
+En esta clase se implemento el siguiente ciclo para realizar las 25 graficas de Lissajous con un delta de 0 e igual amplitud:
 
 - t = linspace(0,2*pi,100)
 - A = 1
