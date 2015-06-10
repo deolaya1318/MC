@@ -27,32 +27,24 @@ Luego de descomprimir el ejecutable de lammps requerimos del siguiente código:
 
 ##10 de Junio:
 
-Se puede realizar una figura de lissajous en un notebook usando el siguiente código:
+En esta clase se implemento el siguiente ciclo para realizar las 25 graficas:
 
-t = linspace(0,2*pi,100)
-A = 1
-B = A
-a = 1
-b = 2
-delta = pi/2
-x = A*cos(a*t+delta)
-y = B*sin(b*t)
-plot(x,y)
-
-se implemento el siguiente ciclo para realizar las 25 graficas:
-
-fig=figure(figsize=(12,12))
-c = 1
-for a in range(5):
-    for b in range(5):
-        delta = 0
-        x = A*cos((a+1)*t+delta)
-        y = B*sin((b+1)*t)
-        subplot(5,5,c)
-        axis("off")
-        axis("equal")
-        plot(x,y)
-        c = c+1
+-t = linspace(0,2*pi,100)
+-A = 1
+-delta = 0
+-B = A
+-fig=figure(figsize=(12,12))
+-c = 1
+-for a in range(5):
+-    for b in range(5):
+-        delta = 0
+-        x = A*cos((a+1)*t+delta)
+-        y = B*sin((b+1)*t)
+-        subplot(5,5,c)
+-        axis("off")
+-        axis("equal")
+-        plot(x,y)
+-        c = c+1
         
 las graficas obtenidas son
 
