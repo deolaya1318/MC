@@ -24,7 +24,7 @@ double main( int argc, char *argv[] ){
   area = anchoyard*largoyard;
 
   //Imprime el resultado de la operacion luego de la conversion
-  printf("El area del salon en yardas cuadradas es: %f\n", area);
+  printf("El area del salon en yardas cuadradas es: %.2f\n", area);
 
 }
 
