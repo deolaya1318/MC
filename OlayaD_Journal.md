@@ -1,4 +1,4 @@
-##Journal Daniel Olaya
+#Journal Daniel Olaya
 
 ##27 de Mayo: 
 
@@ -49,4 +49,29 @@ En esta clase se implemento el siguiente ciclo para realizar las 25 graficas de 
 las graficas obtenidas son
 
 ![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/lissajous.png)
+
+##12 de Junio:
+Se realizó el primer quiz del curso, que evalua GNUPLOT y operaciones a partir de comandos de bash que buscan y reemplazan expresiones regulares.
+
+
+##16 de Junio:
+
+La interpolación es usada para completar información que brindan datos experimentales. Además de la interpolación lineal, existe la interpolación de Lagrange, que consiste en encontrar un polinomio de grado k con k+1 coeficientes que pasa por toda la secuencia de puntos. Adicionalmente en esta interpolación se hace uso de splines que corresponde a igualar la primera y segunda derivada del polinomio en los puntos, que pueden ser llamados nodos.
+Haciendo uso de la función interpolate que se encuentra en la libreria scipy (from scipy import interpolate) se puede encontrar la interpolación requerida. La función tiene el siguiente formato:
+
+- interpolate.interpid(/x,/y,kind="linear o slinear o cubic o cuadratic")
+
+Para evaluar funciones 2D se puede hacer uso del comando:
+
+- x,y = np.mgrid[iniciox:finalx:pasox"j",inicioy:finaly:pasoy"j"]
+
+Para colorear una función de acuerdo a las coordenadas x,y de una función z(x,y):
+
+- pcolor(x,y,z)
+
+No siempre se puede realizar un ajuste polinomial, por ejemplo en el caso de funciones no lineales. Por ello recurrimos al método de los mínimos cuadrados que consiste en encontrar la minima diferencia cuadrática entre los puntos de un módelo y los datos experimentales. Para el Uso de ajuste por mínimos cuadrados con las funciones de numpy y cp, usamos:
+
+- poly_fit
+- curve_fit (definir una función cuyo primer argumento es la variable independiente, y los otros parametros son los que se deben ajustar): curve_fit(funcion,variableind1,variableind2,parametro1,parametro2)
+- poly1d
 
