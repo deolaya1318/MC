@@ -75,3 +75,4 @@ No siempre se puede realizar un ajuste polinomial, por ejemplo en el caso de fun
 - curve_fit (definir una función cuyo primer argumento es la variable independiente, y los otros parametros son los que se deben ajustar): curve_fit(funcion,variableind1,variableind2,parametro1,parametro2)
 - poly1d
 
+recordar añadir datos del fit y la receta de la solución. Además lo del proyecto final
