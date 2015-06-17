@@ -76,3 +76,7 @@ No siempre se puede realizar un ajuste polinomial, por ejemplo en el caso de fun
 - poly1d
 
 recordar añadir datos del fit y la receta de la solución. Además lo del proyecto final
+
+##17 de Junio:
+
+Se estudio cómo enviar los archivos de una rama a la rama master
