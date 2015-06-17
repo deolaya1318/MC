@@ -72,11 +72,12 @@ Para colorear una función de acuerdo a las coordenadas x,y de una función z(x,
 No siempre se puede realizar un ajuste polinomial, por ejemplo en el caso de funciones no lineales. Por ello recurrimos al método de los mínimos cuadrados que consiste en encontrar la minima diferencia cuadrática entre los puntos de un módelo y los datos experimentales. Para el Uso de ajuste por mínimos cuadrados con las funciones de numpy y cp, usamos:
 
 - poly_fit
-- curve_fit (definir una función cuyo primer argumento es la variable independiente, y los otros parametros son los que se deben ajustar): curve_fit(funcion,variableind1,variableind2,parametro1,parametro2)
+- curve_fit (definir una función cuyo primer argumento es la variable independiente, y los otros parametros son los que se deben ajustar): 
+- curve_fit(funcion,variableind1,variableind2,parametro1,parametro2)
 - poly1d
 
 recordar añadir datos del fit y la receta de la solución. Además lo del proyecto final
 
 ##17 de Junio:
 
-Se estudio cómo enviar los archivos de una rama a la rama master
+Se estudio cómo enviar los archivos de una rama a la rama master. Adicionalmente se hizo uso de las herramientas root de scipy.optimize y quad de scipy.integrate para encontrar las raices de un polinomio y para integrar una función entre dos limites, respectivamente. Se requiere la integración para hallar los coeficientes de la sumatoria de los terminos de fourier para reconstruir una función. Los ejemplos que se estudiaron fueron: puntos de Lagrange y funciones periódicas.
