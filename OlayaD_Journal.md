@@ -21,6 +21,10 @@ Además se exploró el comando *awk* y sus funciones. En el ejemplo realizado se
 
 ##2 de Junio:
 
+Usar *grep* para encontrar expresiones regulares en un archivo nos permite encontrar una expresión que represente cuatro caracteres al inicio de una línea junto con un espacio a continuación:
+
+        grep "A-Za-zDd " prueba.csv
+
 
 
 ##5 de Junio:
