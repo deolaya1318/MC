@@ -2,13 +2,17 @@
 
 ##27 de Mayo: 
 
-No asisti a clase, tuve presentacion de proyecto de grado
+No asistí a clase, tuve presentación de proyecto de grado de ingeniería.
 
 ##29 de Mayo:
 
-Se logro modificar y leer una version anterior de un archivo guardado en git haciendo uso de los comandos git log y git checkout con el hash del archivo de la version anteriór. Codigo usado:
+Con la herramienta *git* se realizaron dos tareas:
+1. Se logró modificar y leer una version anterior de un archivo guardado en git con el hash del archivo de la versión anterior. Código usado:
 - *git log*
 - *git checkout #*
+
+2. Primero se creó un archivo en master, entonces se borró el archivo y al regresar con checkout al momento inicial, se observó que el archivo vuelve a reaparecer en master.
+
 
 ##5 de Junio:
 
