@@ -9,8 +9,9 @@ No asistí a clase, tuve presentación de proyecto de grado de ingeniería.
 Con la herramienta *git* se realizaron dos tareas:
 
 1. Se logró modificar y leer una version anterior de un archivo guardado en git con el hash del archivo de la versión anterior. Código usado:
-- *git log*
-- *git checkout #*
+
+        - *git log*
+        - *git checkout #*
 
 2. Primero se creó un archivo en master, entonces se borró y al regresar con checkout al momento inicial, se observó que el archivo vuelve a reaparecer en master.
 
