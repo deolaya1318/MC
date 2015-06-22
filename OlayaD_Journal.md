@@ -10,14 +10,14 @@ Con la herramienta *git* se realizaron dos tareas:
 
 1. Se logró modificar y leer una version anterior de un archivo guardado en git con el hash del archivo de la versión anterior. Código usado:
 
-        - *git log*
-        - *git checkout #*
+        *git log*
+        *git checkout #*
 
 2. Primero se creó un archivo en master, entonces se borró y al regresar con checkout al momento inicial, se observó que el archivo vuelve a reaparecer en master.
 
 Además se exploró el comando 'awk' y sus funciones. En el ejemplo realizado se imprime las lineas de un arhivo .csv cuya primera columna sea igual al número entregado:
 
-- *awk '$1 {print $1}' prueba.csv 
+        'awk '$1 {print $1}' prueba.csv' 
 
 ##2 de Junio:
 
