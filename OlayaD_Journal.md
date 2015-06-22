@@ -6,7 +6,7 @@ No asistí a clase, tuve presentación de proyecto de grado de ingeniería.
 
 ##29 de Mayo:
 
-Con la herramienta *git* se realizaron dos tareas:
+Con la herramienta *git* se realizaron dos tareas:\n
 1. Se logró modificar y leer una version anterior de un archivo guardado en git con el hash del archivo de la versión anterior. Código usado:
 - *git log*
 - *git checkout #*
