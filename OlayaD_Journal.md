@@ -21,11 +21,13 @@ Además se exploró el comando *awk* y sus funciones. En el ejemplo realizado se
 
 ##2 de Junio:
 
-Usar *grep* para encontrar expresiones regulares en un archivo nos permite encontrar una expresión que represente cuatro caracteres al inicio de una línea junto con un espacio a continuación:
+En esta clase se revisó el comando *grep* del programa *bash* y se introdujó la herramiento *GNUPLOT*. Se realizaron las siguientes actividades:
+
+1. Usar *grep* para encontrar expresiones regulares en un archivo nos permite encontrar una expresión que represente cuatro caracteres al inicio de una línea junto con un espacio a continuación:
 
         grep "A-Za-zDd " prueba.csv
 
-
+2. Graficar un script de bash que reciba tres argumentos, el nombre de un archivo csv, el número de la columna para el eje horizontal y el número de la columna para el eje verticual y que haga con gnuplot una gráfica de dispersión con puntos visibles y unidos por líneas rectas
 
 ##5 de Junio:
 
