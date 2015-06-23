@@ -1,4 +1,4 @@
-#Journal Daniel Olaya
+                                                #Journal Daniel Olaya
 
 ##27 de Mayo: 
 
@@ -45,7 +45,9 @@ En esta clase se revisó el comando *grep* del programa *bash* y se introdujó l
 
 Para comenzar se exploró el uso de *gaussrand()* para generar números aleatorios con una distribución gaussiana y luego se normalizaron sobre una esfera.
 
-Se realizaron ejercicios del Python Workbook.
+Además se realizaron ejercicios de calculos sencillos del Python Workbook.
+
+Con respecto a la herramienta *make* se encontró que se requiere llevar a cabo un comando a partir de la compilación de scripts o creación de ficheros de texto para lograr un objetivo. 
 
 ##9 de Junio:
 
