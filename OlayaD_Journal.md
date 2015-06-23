@@ -1,4 +1,4 @@
-                                                #Journal Daniel Olaya
+#_Journal Daniel Olaya_
 
 ##27 de Mayo: 
 
@@ -54,10 +54,14 @@ Con respecto a la herramienta *make* se encontró que se requiere llevar a cabo 
 Se logró entender la estructura de make, donde se requiere llevar a cabo un comando a partir de la compilación de scripts o creación de ficheros de texto para lograr un objetivo. 
 Luego de descomprimir el ejecutable de lammps requerimos del siguiente código:
 
-        ./lmp_ubuntu_simple < in.indent^C, hay que decomentar la linea dump del archivo in.indent
-        grep "^1 " dump.indent | head -1, realizar un loop variando el grep desde 1 hasta 420
+        ./lmp_ubuntu_simple < in.indent
+        pos = $i
+        while pos == 420
+        do
+        grep "^pos " dump.indent | head -1 
+        done
 
-- con el archivo guardado se debe hacer awk para obtener las columnas 4 y 5 que corresponden a las posiciones x, y de los 420 átomos
+Este código permite guardar en el archivo *dump.indent* al eliminar la linea *dump* del archivo *in.indent* la respuesta de correr el ejecutable *lmp_ubuntu_simple* y buscar la posición 1 en el archivo realizado para obtener las posiciones x, y de los 420 átomos
 
 ##10 de Junio:
 
