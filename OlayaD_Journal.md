@@ -27,8 +27,15 @@ En esta clase se revisó el comando *grep* del programa *bash* y se introdujó l
 
         grep "A-Za-zDd " prueba.csv
 
-2. Graficar un script de bash que reciba tres argumentos, el nombre de un archivo csv, el número de la columna para el eje horizontal y el número de la columna para el eje verticual y que haga con gnuplot una gráfica de dispersión con puntos visibles y unidos por líneas rectas
+2. Hacer una gráfica de dispersión con puntos visibles y unidos por líneas rectas a partir de un script de bash que reciba tres argumentos, el nombre de un archivo csv, el número de la columna para el eje horizontal y el número de la columna para el eje vertical 
 
+        gnuplot << EOF       
+                set datafile separator ","
+                set title "Gráfica de dispersión"
+                plot '$1' using $2:$3  
+                plot '$1' using $2:$3 with points 
+        EOF
+        
 ##5 de Junio:
 
 Para comenzar se exploró el uso de *gaussrand()* para generar números aleatorios con una distribución gaussiana y luego se normalizaron sobre una esfera.
