@@ -133,4 +133,11 @@ Se estudió cómo enviar los archivos de una rama a la rama master. Adicionalmen
 
 En *Python* interactivo las herramientas *fft* y *ifft* nos brindan la transformada de fourier y la transformada inversa de fourier de una imágen o de datos experimentales. Con esta información se puede realizar análisis de imagenes, invertir las imagenes y hasta invertirlas y cambiarles su aspecto al aplicar algún tipo de filtro. Adicionalmente para variables que cambian con el tiempo, podemos conocer información de su espectro de potencias y al igual realizar filtrado datos experimentales para eliminar el ruido intrínseco debido al método de obtención. Así como conocer las frecuencias principales de una tabla de datos, como se realizó en el ejemplo de la clase.
 
+El código requerido para leer y obtener las características de una imágen en python interactivo es:
+
+        img = plt.imread('horizontallena.png')
+        print shape(img)
+        fig = plt.figure(1, figsize=(9.5,9))
+        plt.imshow(img)
+
 ##23 de Junio:
