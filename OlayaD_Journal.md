@@ -142,4 +142,4 @@ El código requerido para leer y obtener las características de una imágen en 
 
 ##23 de Junio:
 
-Para calcular la derivada en cada uno de los puntos debemos recordar su definición como un limite cuando h es infinitesimal de la función evaluada en dos puntos separados por h dividido por tal intervalo: $\f'(x)=frac{f(x+h)-f(x)}{h}$.
+Para calcular la derivada en cada uno de los puntos debemos recordar su definición como un limite cuando h es infinitesimal de la función evaluada en dos puntos separados por h dividido por tal intervalo: $\f(x)=frac{f(x+h)-f(x)}{h}$.
