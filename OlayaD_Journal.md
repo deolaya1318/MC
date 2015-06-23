@@ -153,3 +153,7 @@ Para hacer un *array* con separaciones logarítmicas:
 Usando la herramienta sympy se puede realizar calculo simbólico:
 
         from sympy import *
+
+Con respecto a la actividad realizada en clase, se recordó el uso de la transformada de fourier en *scipy.fftpack* como método para encontrar la frecuencia representativa en una señal con ruido, que por lo general corresponde a bajas frecuencias, para luego limpiar la señal. La señal encontrada corresponde a:
+
+![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/fourier.png)
