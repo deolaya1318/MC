@@ -23,7 +23,7 @@ Además se exploró el comando *awk* y sus funciones. En el ejemplo realizado se
 
 En esta clase se revisó el comando *grep* del programa *bash* y se introdujó la herramiento *GNUPLOT*. Se realizaron las siguientes actividades:
 
-1. Usar *grep* para encontrar expresiones regulares en un archivo nos permite encontrar una expresión que represente cuatro caracteres al inicio de una línea junto con un espacio a continuación:
+1. Usar *grep* para encontrar una expresión que represente cuatro caracteres al inicio de una línea junto con un espacio a continuación:
 
         grep "A-Za-zDd " prueba.csv
 
@@ -36,6 +36,11 @@ En esta clase se revisó el comando *grep* del programa *bash* y se introdujó l
                 plot '$1' using $2:$3 with points 
         EOF
         
+3. Usando comandos como *grep* y *cat* se modificó un archivo que contiene un millón de dígitos del número PI para que todo caracter diferente a los dígitos de pi sea eliminado y que el resultado sea dividido por lineas de 20 caracteres en un archivo con nombre PIslices20.dat.
+
+        curl http://pi.karmona.com/>PIslices20.dat
+        cat PIslices20.dat | grep -v "Pi - 10 Million Digits"
+
 ##5 de Junio:
 
 Para comenzar se exploró el uso de *gaussrand()* para generar números aleatorios con una distribución gaussiana y luego se normalizaron sobre una esfera.
