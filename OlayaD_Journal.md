@@ -119,7 +119,9 @@ Para usar *curve_fit*: definir una función cuyo primer argumento es la variable
 
         curve_fit(*funcion*,*variableind1*,*variableind2*,*parametro1*,*parametro2*)
 
-Como ejemplo se usó esta función para hallar la magnitud del momento magnético del imán. La gráfica de los datos se encuentra en *momento.ipynb*. IMPORTANTE: poner gráfica
+Como ejemplo se usó esta función para hallar la magnitud del momento magnético del imán. La gráfica del ajuste obtenido con *curve_fit* es:
+
+![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/momento.pdf)
 
 _Proyecto final:_
 
