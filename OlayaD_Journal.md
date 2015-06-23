@@ -61,11 +61,13 @@ Luego de descomprimir el ejecutable de lammps requerimos del siguiente código:
         grep "^pos " dump.indent | head -1 
         done
 
-Este código permite guardar en el archivo *dump.indent* al eliminar la linea *dump* del archivo *in.indent* la respuesta de correr el ejecutable *lmp_ubuntu_simple* y buscar la posición 1 en el archivo realizado para obtener las posiciones x, y de los 420 átomos
+Este código permite guardar en el archivo *dump.indent* al eliminar la linea *dump* del archivo *in.indent* la respuesta de correr el ejecutable *lmp_ubuntu_simple* y buscar la posición 1 en el archivo realizado para obtener las posiciones x, y de los 420 átomos.
+
+_Proyecto Final:_ 
 
 ##10 de Junio:
 
-En esta clase se implemento el siguiente ciclo para realizar las 25 graficas de Lissajous con un delta de 0 e igual amplitud:
+En esta clase se implemento el siguiente ciclo para realizar las 25 graficas de Lissajous con un delta igual a 0 y con igual amplitud:
 
         t = linspace(0,2*pi,100)
         A = 1
@@ -84,7 +86,7 @@ En esta clase se implemento el siguiente ciclo para realizar las 25 graficas de 
                         plot(x,y)
                         c = c+1
         
-las graficas obtenidas son
+las graficas que se obtienen de este código son:
 
 ![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/lissajous.png)
 
@@ -103,22 +105,30 @@ Para evaluar funciones 2D se puede hacer uso del comando:
 
         x,y = np.mgrid[iniciox:finalx:pasox"j",inicioy:finaly:pasoy"j"]
 
-Para colorear una función de acuerdo a las coordenadas x,y de una función z(x,y):
+Para colorear una función de acuerdo a las coordenadas x,y de una función z(x,y) se usa:
 
         pcolor(x,y,z)
 
-No siempre se puede realizar un ajuste polinomial, por ejemplo en el caso de funciones no lineales. Por ello recurrimos al método de los mínimos cuadrados que consiste en encontrar la minima diferencia cuadrática entre los puntos de un módelo y los datos experimentales. Para el Uso de ajuste por mínimos cuadrados con las funciones de *numpy* y *cp*, usamos:
+No siempre se puede realizar un ajuste polinomial, por ejemplo en el caso de funciones no lineales. Por ello recurrimos al método de los mínimos cuadrados que consiste en encontrar la minima diferencia cuadrática entre los puntos de un módelo y los datos experimentales. Para el realizar el ajuste por mínimos cuadrados con las funciones de *numpy* y *scipy*, usamos:
 
         poly_fit
         curve_fit
         poly1d
 
-Para usar curve_fit: definir una función cuyo primer argumento es la variable independiente, y los otros parametros son los que se deben ajustar)
+Para usar *curve_fit*: definir una función cuyo primer argumento es la variable independiente, y los otros parametros son los que se deben ajustar)
 
-        curve_fit*(*funcion*,*variableind1*,*variableind2*,*parametro1*,*parametro2*)
+        curve_fit(*funcion*,*variableind1*,*variableind2*,*parametro1*,*parametro2*)
 
-recordar añadir datos del fit y la receta de la solución. Además lo del proyecto final
+Como ejemplo se usó esta función para hallar la magnitud del momento magnético del imán. La gráfica de los datos se encuentra en *momento.ipynb*. IMPORTANTE: poner gráfica
+
+_Proyecto final:_
 
 ##17 de Junio:
 
-Se estudio cómo enviar los archivos de una rama a la rama master. Adicionalmente se hizo uso de las herramientas *root* de *scipy.optimize* y *quad* de *scipy.integrate* para encontrar las raices de un polinomio y para integrar una función entre dos limites, respectivamente. Se requiere la integración para hallar los coeficientes de la sumatoria de los terminos de fourier para reconstruir una función. Los ejemplos que se estudiaron fueron: puntos de Lagrange y funciones periódicas.
+Se estudió cómo enviar los archivos de una rama a la rama master. Adicionalmente se hizó uso de las herramientas *root* de *scipy.optimize* y *quad* de *scipy.integrate* para encontrar las raices de un polinomio y para integrar una función entre dos límites, respectivamente. Se requiere la integración para hallar los coeficientes de la sumatoria de los terminos de fourier para reconstruir una función. Los ejemplos que se estudiaron fueron: puntos de Lagrange y funciones periódicas.
+
+##19 de Junio:
+
+En *Python* interactivo las herramientas *fft* y *ifft* nos brindan la transformada de fourier y la transformada inversa de fourier de una imágen o de datos experimentales. Con esta información se puede realizar análisis de imagenes, invertir las imagenes y hasta invertirlas y cambiarles su aspecto al aplicar algún tipo de filtro. Adicionalmente para variables que cambian con el tiempo, podemos conocer información de su espectro de potencias y al igual realizar filtrado datos experimentales para eliminar el ruido intrínseco debido al método de obtención. Así como conocer las frecuencias principales de una tabla de datos, como se realizó en el ejemplo de la clase.
+
+##23 de Junio:
