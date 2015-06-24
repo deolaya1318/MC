@@ -63,7 +63,7 @@ Luego de descomprimir el ejecutable de lammps requerimos del siguiente código:
 
 Este código permite guardar en el archivo *dump.indent* al eliminar la linea *dump* del archivo *in.indent* la respuesta de correr el ejecutable *lmp_ubuntu_simple* y buscar la posición 1 en el archivo realizado para obtener las posiciones x, y de los 420 átomos.
 
-##_Proyecto Final:_## Realizar análisis de imagenes producidas en AFM. 
+*_Proyecto Final:_* Realizar análisis de imagenes producidas en AFM. 
 
 ##10 de Junio:
 
@@ -123,7 +123,7 @@ Como ejemplo se usó esta función para hallar la magnitud del momento magnétic
 
 ![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/momento.png)
 
-_Proyecto final:_ Realizar análisis de imagenes de nanopartículas producidas en AFM. Analizar la dinámica de un sistema caótico a partir de graficas del espacio de fase de una variable que se pueda medir en el sistema.
+*_Proyecto final:_* Realizar análisis de imagenes de nanopartículas producidas en AFM. Analizar la dinámica de un sistema caótico a partir de graficas del espacio de fase de una variable que se pueda medir en el sistema.
 
 ##17 de Junio:
 
