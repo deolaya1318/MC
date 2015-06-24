@@ -164,4 +164,6 @@ El recíproco de la frecuencia de corte corresponde al periodo del ciclo solar, 
 
 Es necesario aproximar rectas (regla de trapecio) o polinomios de diferentes grados (regla de Simpson) a una función para conocer el valor de su integral, pues la integral de la función sera igual al área de la aproximación usada. En esto consiste la integración númerica computacional. Para mejorar la eficiencia de estos métodos se usan funciones que solo requieren evaluar su valor una sola vez. Al igual que la derivación númerica, existe un punto en el que reducir el step de la integración deja de reducir el error entre el valor real de la integral y el valor dado por los métodos computacionales.
 
+En esta clase, usando *slice notation*, se pudo implementar la regla de Simpson 3/8:
 
+![](https://upload.wikimedia.org/math/6/e/f/6ef5c494f21c878f08791fe72a6bdd96.png)
