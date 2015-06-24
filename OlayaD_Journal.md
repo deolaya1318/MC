@@ -63,7 +63,7 @@ Luego de descomprimir el ejecutable de lammps requerimos del siguiente código:
 
 Este código permite guardar en el archivo *dump.indent* al eliminar la linea *dump* del archivo *in.indent* la respuesta de correr el ejecutable *lmp_ubuntu_simple* y buscar la posición 1 en el archivo realizado para obtener las posiciones x, y de los 420 átomos.
 
-_Proyecto Final:_ 
+_Proyecto Final:_ Realizar análisis de imagenes producidas en AFM. 
 
 ##10 de Junio:
 
@@ -123,7 +123,7 @@ Como ejemplo se usó esta función para hallar la magnitud del momento magnétic
 
 ![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/momento.png)
 
-_Proyecto final:_
+_Proyecto final:_ Realizar análisis de imagenes de nanopartículas producidas en AFM. Analizar la dinámica de un sistema caótico a partir de graficas del espacio de fase de una variable que se pueda medir en el sistema.
 
 ##17 de Junio:
 
@@ -159,3 +159,9 @@ Con respecto a la actividad realizada en clase, se recordó el uso de la transfo
 ![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/fourier.png)
 
 El recíproco de la frecuencia de corte corresponde al periodo del ciclo solar, es decir de 5 años.
+
+##24 de Junio:
+
+Es necesario aproximar rectas (regla de trapecio) o polinomios de diferentes grados (regla de Simpson) a una función para conocer el valor de su integral, pues la integral de la función sera igual al área de la aproximación usada. En esto consiste la integración númerica computacional. Para mejorar la eficiencia de estos métodos se usan funciones que solo requieren evaluar su valor una sola vez. Al igual que la derivación númerica, existe un punto en el que reducir el step de la integración deja de reducir el error entre el valor real de la integral y el valor dado por los métodos computacionales.
+
+
