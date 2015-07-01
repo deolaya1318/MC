@@ -167,3 +167,8 @@ Es necesario aproximar rectas (regla de trapecio) o polinomios de diferentes gra
 En esta clase, usando *slice notation*, se pudo implementar la regla de Simpson 3/8:
 
 ![](https://upload.wikimedia.org/math/6/e/f/6ef5c494f21c878f08791fe72a6bdd96.png)
+
+##26 de Junio:
+
+Las ecuaciones diferenciales dan información importante de la dinámica de sistemas físicos. En métodos computacionales es obligatorio discretizar (con respecto al tiempo) la ecuación diferencial, pues el computador no conoce las derivadas de la ecuación diferencial. Un método de discretización corresponde al método de Euler. Donde se define una función que calcule la derivada y evalua el valor de la función un momento despues al multiplicar su derivada por un delta de tiempo. Al usar una linea recta para unir dos puntos, hacemos una discretización con punto medio. Para este punto debemos conocer dos parámetros *k_1* y *k_2*, que son funciones de las derivadas. Existe otro tipo de union entre los puntos inicial, final e intermedio: cuadrática. Este tipo de método es llamado Runge Kutta de tercer orden, por que se requiere conocer tres parámetros *k_1*, *k_2* y *k_3*, que al igual que el método anterior es función de sus derivadas.
+
