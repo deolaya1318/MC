@@ -142,8 +142,10 @@ El código requerido para leer y obtener las características de una imágen en 
 
 ##23 de Junio:
 
-Para calcular la derivada en cada uno de los puntos debemos recordar su definición como un limite cuando h es infinitesimal de la función evaluada en dos puntos separados por h dividido por tal intervalo:         
-        $\f(x)=frac{f(x+h)-f(x)}{h}$
+Para calcular la derivada en cada uno de los puntos debemos recordar su definición como un limite cuando h es infinitesimal de la función evaluada en dos puntos separados por h dividido por tal intervalo:
+
+![](https://upload.wikimedia.org/math/7/8/e/78e314282029416f1def5ba229b0a008.png)
+
 Existen distintos métodos computacionales para realizar derivadas: diferencias centrales, diferencias adelantadas y diferencias atrasadas. Su válidez se mide a partir del error entre el cálculo realizado y la derivada real. La ventaja de diferencias centrales consiste en que reducir el stepsize reduce el error. Sin embargo para los tres métodos existe un step a partir del cual el error deja de reducirse y empieza a aumentar.
 
 Para hacer un *array* con separaciones logarítmicas:
