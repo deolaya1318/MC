@@ -190,7 +190,7 @@ para demostrar las ecuaciones de Adam-Bashfort de orden 2, 3, y 4 que son usadas
 
 ![](https://upload.wikimedia.org/math/1/1/1/1119606522452adb94ad241070166c41.png)
 
-_Proyecto final:_ La última media hora de la clase se dedico a ampliar las ideas previas sobre el proyecto final. En las anotaciones previas en este *Journal* se comentó acerca de realizar el proyecto en dos distintas temáticas:
+_Proyecto final:_ La última media hora de la clase se dedicó a ampliar las ideas previas sobre el proyecto final. En las anotaciones previas en este *Journal* se comentó acerca de realizar el proyecto en dos distintas temáticas:
 
 - Análisis de imagenes obtenidas en AFM de distintas nanopartículas
 - Caracterización de un sistemas bilineal experimental usando la teoría del espacio de fase
