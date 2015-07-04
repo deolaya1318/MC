@@ -174,9 +174,9 @@ Las ecuaciones diferenciales dan información importante de la dinámica de sist
 
 ##30 de Junio:
 
-Existe una función del paquete *scipy* que hace uso de la familia de funciones de Adam-Bashfort de orden 4 para resolver ecuaciones diferenciales de primer orden. Esta familia de funciones corresponde a un método de pasos múltiples.
+Existe la función *odeint()* del paquete *scipy* que hace uso de la familia de funciones de Adam-Bashfort de orden 4 para resolver ecuaciones diferenciales de primer orden. Esta familia de funciones corresponde a un método de pasos múltiples.
 
-En esta clase se trabajó en el ejemplo de resonancia magnética núclear. Se implementó el método de runge kutta de cuarto orden para resolver la ecuación de schrodinger que describe el fenómeno.   
+En esta clase se trabajó en el ejemplo de resonancia magnética núclear. Se implementó el método de Runge Kutta de cuarto orden para resolver la ecuación de schrodinger que describe el fenómeno.   
 
 ##1 de Julio:
 
