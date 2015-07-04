@@ -172,3 +172,39 @@ En esta clase, usando *slice notation*, se pudo implementar la regla de Simpson 
 
 Las ecuaciones diferenciales dan información importante de la dinámica de sistemas físicos. En métodos computacionales es obligatorio discretizar (con respecto al tiempo) la ecuación diferencial, pues el computador no conoce las derivadas de la ecuación diferencial. Un método de discretización corresponde al método de Euler. Donde se define una función que calcule la derivada y evalua el valor de la función un momento despues al multiplicar su derivada por un delta de tiempo. Al usar una linea recta para unir dos puntos, hacemos una discretización con punto medio. Para este punto debemos conocer dos parámetros *k_1* y *k_2*, que son funciones de las derivadas. Existe otro tipo de union entre los puntos inicial, final e intermedio: cuadrática. Este tipo de método es llamado Runge Kutta de tercer orden, por que se requiere conocer tres parámetros *k_1*, *k_2* y *k_3*, que al igual que el método anterior es función de sus derivadas.
 
+##30 de Junio:
+
+Existe una función del paquete *scipy* que hace uso de la familia de funciones de Adam-Bashfort de orden 4 para resolver ecuaciones diferenciales de primer orden. Esta familia de funciones corresponde a un método de pasos múltiples.
+
+En esta clase se trabajó en el ejemplo de resonancia magnética núclear. Se implementó el método de runge kutta de cuarto orden para resolver la ecuación de schrodinger que describe el fenómeno.   
+
+##1 de Julio:
+
+Se hizo uso de la herramienta *integrate* del paquete *sympy*:
+ 
+        from sympy import *
+        t, fn, fn1, h, tn, tn1 = symbols('t fn fn1 h tn tn1')
+        integrate(fn1*(t-tn)/(tn1-tn)+fn*(t-tn1)/(tn-tn1),(t,tn,tn+h))
+        
+para demostrar las ecuaciones de Adam-Bashfort de orden 2, 3, y 4 que son usadas en las rutinas de *Fortran* que se usan en la función *odeint()* del paquete *scipy.integrate*:
+
+$Y_{n+1}-Y_{n}=\frac {\delta t}{2} (3f_n - f_{n-1})+O(\delta t^4))$
+$Y_{n+1}-Y_{n}=\frac {\delta t}{12} (23f_n - 16f_{n-1} + 5f_{n-2})+O(\delta t^4))$
+$Y_{n+1}-Y_{n}=\frac {\delta t}{24} (55f_n - 59f_{n-1} + 37f_{n-2} - 9f_{n-3})+O(\delta t^4))$
+
+_Proyecto final:_ La última media hora de la clase se dedico a ampliar las ideas previas sobre el proyecto final. En las anotaciones previas en este *Journal* se comentó acerca de realizar el proyecto en dos distintas temáticas:
+
+- Análisis de imagenes obtenidas en AFM de distintas nanopartículas
+- Caracterización de un sistemas bilineal experimental usando la teoría del espacio de fase
+
+De estas dos distintas temáticas se elige la segunda, pues existen varias técnicas de derivación numérica y de análisis de fourier que nos permite caracterizar el sistema bilineal del que se tiene datos experimentales.
+
+##3 de Julio:
+
+En esta clase se dedico el tiempo a introducir el tema de ecuaciones diferenciales parciales. Además se realizó grandes avances en las animaciones a entregar para la tarea de esta semana. 
+
+_Proyecto final:_ La última hora se dedico a realizar la introducción, los objetivos y un breve marco teórico del proyecto final del curso. La idea del proyecto corresponde a caracterizar el sistema en sus dos regimenes. Los objetivos del proyecto son:
+
+- graficar el espacio de fases de la posición angular de un punto del sistema biestable 
+- encontrar las frecuencias de excitación para cada régimen
+- describir cualitativamente cada régimen 
