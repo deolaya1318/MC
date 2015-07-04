@@ -188,9 +188,9 @@ Se hizo uso de la herramienta *integrate* del paquete *sympy*:
         
 para demostrar las ecuaciones de Adam-Bashfort de orden 2, 3, y 4 que son usadas en las rutinas de *Fortran* que se usan en la función *odeint()* del paquete *scipy.integrate*:
 
-$$ Y_{n+1}-Y_{n}=\frac {\delta t}{2} (3f_n - f_{n-1})+O(\delta t^4)) $$
-$$ Y_{n+1}-Y_{n}=\frac {\delta t}{12} (23f_n - 16f_{n-1} + 5f_{n-2})+O(\delta t^4)) $$
-$$ Y_{n+1}-Y_{n}=\frac {\delta t}{24} (55f_n - 59f_{n-1} + 37f_{n-2} - 9f_{n-3})+O(\delta t^4)) $$
+        $$ Y_{n+1}-Y_{n}=\frac {\delta t}{2} (3f_n - f_{n-1})+O(\delta t^4)) $$
+        $$ Y_{n+1}-Y_{n}=\frac {\delta t}{12} (23f_n - 16f_{n-1} + 5f_{n-2})+O(\delta t^4)) $$
+        $$ Y_{n+1}-Y_{n}=\frac {\delta t}{24} (55f_n - 59f_{n-1} + 37f_{n-2} - 9f_{n-3})+O(\delta t^4)) $$
 
 _Proyecto final:_ La última media hora de la clase se dedico a ampliar las ideas previas sobre el proyecto final. En las anotaciones previas en este *Journal* se comentó acerca de realizar el proyecto en dos distintas temáticas:
 
