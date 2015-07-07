@@ -208,3 +208,20 @@ _Proyecto final:_ La última hora se dedico a realizar la introducción, los obj
 - graficar el espacio de fases de la posición angular de un punto del sistema biestable 
 - encontrar las frecuencias de excitación para cada régimen
 - describir cualitativamente cada régimen 
+
+##7 de Julio:
+
+Para resolver ecuaciones diferenciales parciales usamos la técnica de expresar las derivadas de espacio y tiempo en forma de diferencias finitas. Por cada dimensión se debe expresar una diferencia finita. 
+
+El método de relajación consiste en usar un ansatz para una ecuación que será iterado hasta encontrar su solución. Podemos usar este método para solucionar la ecuación de Laplace 2D:
+
+![](https://upload.wikimedia.org/math/4/4/7/447c028a9431b8c38fd5a882911b430d.png)
+
+Herramientas útiles en la solución de ecuación de poisson en ipython notebook:
+        
+        for __ in range(numiter):
+                placa = 1/4.*(np.roll(place,1,axis=0)+np.roll(place,1,axis=1)+np.roll(place,-1,axis=0)+np.roll(place,-1,axis=1))
+                placa[0] = 0
+                placa[-1] = 0
+                placa[:,0] = 10
+                placa[:,-1] = 0
