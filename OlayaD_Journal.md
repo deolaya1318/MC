@@ -230,4 +230,8 @@ En el problema de la ecuación de onda se logró avanzar en la solución de la c
 
         chord[-1,-1]=chord[-2,-1]
         
-        
+##8 de Julio:
+
+Para resolver la ecuación de Schrodinger usamos diferencias finitas para expresar la derivada en tiempo. Sin embargo el valor de alfa restringe aún más el valor del delta de tiempo, esto nos da el resultado explicito del valor de la función de onda en un punto despues. De tal forma que debemos usar un método implicito, que corresponde a definir que la derivada en el tiempo nos da un estimado del valor de la función de onda en un tiempo despues. Estos resultados se promedian y se obtiene el resultado del valor de la función de onda.
+
+Se dedicó una hora a dar solución a la sexta tarea.
