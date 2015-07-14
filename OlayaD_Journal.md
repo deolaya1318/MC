@@ -235,3 +235,13 @@ En el problema de la ecuación de onda se logró avanzar en la solución de la c
 Para resolver la ecuación de Schrodinger usamos diferencias finitas para expresar la derivada en tiempo. Sin embargo el valor de alfa restringe aún más el valor del delta de tiempo, esto nos da el resultado explicito del valor de la función de onda en un punto despues. De tal forma que debemos usar un método implicito, que corresponde a definir que la derivada en el tiempo nos da un estimado del valor de la función de onda en un tiempo despues. Estos resultados se promedian y se obtiene el resultado del valor de la función de onda.
 
 Se dedicó una hora a dar solución a la sexta tarea.
+
+##10 de Julio:
+
+Se dedicó esta clase a solucionar la tarea 6
+
+##14 de Julio:
+
+El método de elementos finitos es otra de las herramientas útiles para solucionar ecuaciones diferenciales. Consiste en multiplicar la función que iguala a la derivada en la ecuación diferencial por ecuaciones de prueba. Al considerar que se puede reescribir las funciones como una combinación lineal de funciones sombrero, convertimos el problema de resolver la ecuación diferencial en un problema de algebra lineal. El intervalo de la función sombrero es llamado un elemento, los puntos extremos de esta función son nodos y el conjunto de todos los nodos es llamado la malla. 
+
+Métodos de monte carlo. Corresponde a solucionar problemas analíticos a partir de la generación de números aleatorios. Por ejemplo, para determinar el valor de pi se genera puntos aleatorios en un area cuadrada y se establece la razón entre los puntos que estan dentro de un circulo y dentro del cuadrado. Ejemplos de experimentos de monte carlo: cual es la probabilidad de que en N lanzamientos se obtengan n caras y cuántos turnos se requieren para ganar el bingo.
