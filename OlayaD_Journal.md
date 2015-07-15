@@ -245,3 +245,23 @@ Se dedicó esta clase a solucionar la tarea 6
 El método de elementos finitos es otra de las herramientas útiles para solucionar ecuaciones diferenciales. Consiste en multiplicar la función que iguala a la derivada en la ecuación diferencial por ecuaciones de prueba. Al considerar que se puede reescribir las funciones como una combinación lineal de funciones sombrero, convertimos el problema de resolver la ecuación diferencial en un problema de algebra lineal. El intervalo de la función sombrero es llamado un elemento, los puntos extremos de esta función son nodos y el conjunto de todos los nodos es llamado la malla. 
 
 Métodos de monte carlo. Corresponde a solucionar problemas analíticos a partir de la generación de números aleatorios. Por ejemplo, para determinar el valor de pi se genera puntos aleatorios en un area cuadrada y se establece la razón entre los puntos que estan dentro de un circulo y dentro del cuadrado. Ejemplos de experimentos de monte carlo: cual es la probabilidad de que en N lanzamientos se obtengan n caras y cuántos turnos se requieren para ganar el bingo.
+
+##15 de Julio:
+
+El objetivo de usar el método de muestreo de importancia es reducir la varianza de la función _f_ que depende de la varianza de _I_ y de la cantidad de números aleatorios generados. Los números generados se deben estimar a partir de una cadena de markov. Esta describe procesos probabilisticos que producen estados con la probabilidad que uno quiere. Existen dos tipos de muestreo: directo e indirecto. En el muestreo directo generamos números aleatorios con una distribución similar a la función a integrar. En el muestreo indirecto es necesario establecer un condicional para escoger números que sean representativos de la distribución de interés. 
+
+El avance a encontrar la probabilidad de n peruanos rodeados por dos colombianos en función de N colombianos sentados en una mesa se halla en el código:
+
+        numintentos = 1000
+        for intentos in linspace(1,numintentos,numintentos):
+                P = 10
+                mesa = np.append(np.zeros(P),np.ones(int(intentos)))
+                np.random.shuffle(mesa)
+                acierto = 0
+                prob = np.zeros(numintentos)
+                for i in range(int(intentos)-1):
+                        if mesa[i-2] != mesa[i-1] and mesa[i-2] == mesa[i]:
+                                acierto += 1
+                prob[int(intentos)-1] = float(acierto)/intentos
+
+En este código se generan 1000 mesas con un ordenamiento aleatorio de 10 peruanos y N colombianos que se representan por la variable intentos. Se hace uso de la función _shuffle_ para variar el orden aleatorio de la mesa y se usa un condicional para revisar que un peruano este entre dos colombianos
