@@ -253,7 +253,7 @@ Herramientas útiles en la solución de ecuación de laplace 2D en el problema d
 
 En el problema de la ecuación de onda se logró avanzar en la solución de la condición de un extremo libre. Para establecer que un extremo de la cuerda sea libre se debe asegurar que la velocidad en el extremo libre sea nula. Esto es,
 
-        chord[-1,-1]=chord[-2,-1]
+        chord[i,-1]=chord[i,-2]
         
 ##8 de Julio:
 
