@@ -25,7 +25,7 @@ En esta clase se revisó el comando *grep* del programa *bash* y se introdujó l
 
 1. Usar *grep* para encontrar una expresión que represente cuatro caracteres al inicio de una línea junto con un espacio a continuación:
 
-        grep "A-Za-zDd " prueba.csv
+        grep "^.... " prueba.csv
 
 2. Hacer una gráfica de dispersión con puntos visibles y unidos por líneas rectas a partir de un script de bash que reciba tres argumentos, el nombre de un archivo csv, el número de la columna para el eje horizontal y el número de la columna para el eje vertical 
 
@@ -40,6 +40,7 @@ En esta clase se revisó el comando *grep* del programa *bash* y se introdujó l
 
         curl http://pi.karmona.com/>PIslices20.dat
         cat PIslices20.dat | grep -v "Pi - 10 Million Digits"
+        
 
 ##5 de Junio:
 
@@ -48,6 +49,18 @@ Para comenzar se exploró el uso de *gaussrand()* para generar números aleatori
 Además se realizaron ejercicios de calculos sencillos del Python Workbook.
 
 Con respecto a la herramienta *make* se encontró que se requiere llevar a cabo un comando a partir de la compilación de scripts o creación de ficheros de texto para lograr un objetivo. 
+La utilidad *make* es una herramienta que controla la ejecución de código y otros archivos de la lista de programas dentro de un programa. Por ejemplo, se pueden instalar ejecutables que funcionen en el servidor de ubuntu de las salas de computo de la universidad como se realizo para obtener datos de lammps. 
+
+Make obtiene sus instrucciones de un archivo llamado *makefile*, que consiste en una lista de archivos con su respectiva instrucción para crearlos. A su vez, en el siguiente link: [http://www.gnu.org/software/make/] se recomienda que al crear un programa, se debe escribir el *makefile* para instalarlo y ejecutarlo.
+
+En un *makefile*, una regla le comunica a *Make* cómo ejecutar una serie de comandos para construir un archivo objetivo a partir de archivos de la carpeta donde se encuentra el *makefile*. Además se muestra la lista de dependencias del archivo objetivo. En esta lista se deben incluir todos los archivos requeridos como entradas a los comandos en la regla.
+
+Este es el formato de una regla en el *makefile*:
+
+objetivo:   dependencias ...
+          comandos
+          ...
+
 
 ##9 de Junio:
 
@@ -160,7 +173,7 @@ Con respecto a la actividad realizada en clase, se recordó el uso de la transfo
 
 ![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/fourier.png)
 
-El recíproco de la frecuencia de corte corresponde al periodo del ciclo solar, es decir de 5 años.
+El recíproco de la frecuencia de corte corresponde al periodo del ciclo solar, es decir de 11 años.
 
 ##24 de Junio:
 
@@ -186,7 +199,8 @@ Se hizo uso de la herramienta *integrate* del paquete *sympy*:
  
         from sympy import *
         t, fn, fn1, h, tn, tn1 = symbols('t fn fn1 h tn tn1')
-        integrate(fn1*(t-tn)/(tn1-tn)+fn*(t-tn1)/(tn-tn1),(t,tn,tn+h))
+        simplify(integrate(fn1*(t-tn)/(tn1-tn)+fn*(t-tn1)/(tn-tn1),(t,tn,tn+h)).subs(tn1:tn-h))
+        
         
 para demostrar las ecuaciones de Adam-Bashfort de orden 2, 3, y 4 que son usadas en las rutinas de *Fortran* que se usan en la función *odeint()* del paquete *scipy.integrate*:
 
