@@ -39,8 +39,10 @@ En esta clase se revisó el comando *grep* del programa *bash* y se introdujó l
 3. Usando comandos como *grep* y *cat* se modificó un archivo que contiene un millón de dígitos del número PI para que todo caracter diferente a los dígitos de pi sea eliminado y que el resultado sea dividido por lineas de 20 caracteres en un archivo con nombre PIslices20.dat.
 
         curl http://pi.karmona.com/>PIslices20.dat
-        cat PIslices20.dat | grep -v "Pi - 10 Million Digits"
+        cat PIslices20.dat | grep -v "Pi - 10 Million Digits" | grep -v "^d "
+        split -l 20 PIslices20.dat
         
+En estas tres líneas de código se descarga el archivo y se guarda en PIslices20.dat, luego se elimina el título y el número de cada pagina por último se realiza una separación del archivo en lineas de 20 caracteres. 
 
 ##5 de Junio:
 
@@ -106,6 +108,11 @@ las graficas que se obtienen de este código son:
 ##12 de Junio:
 Se realizó el primer quiz del curso, que evalua *GNUPLOT* y operaciones a partir de comandos de bash que buscan y reemplazan expresiones regulares.
 
+Se realizó una revisión del segundo capitulo de Landau sobre error e incertidumbre, a continuación se resume lo aprendido:
+
+Existen cuatro tipos de errores comunes en problemas resueltos computacionalmente: errores debido a descuidos o una mal modelo teórico, errores aleatorios, errores de aproximaciones, y errores debido a la acumulación de numeros flotantes en la memoria del computador. Este último error se amplifica a medida que el número de pasos requeridos para resolver el problema se aumentan.
+
+Es necesario introducir el término *substractive cancellation*, que significa que restar dos números muy grandes que son similares aumenta el error en su calculo. Pues este error depende del inverso de esta diferencia, de tal manera que pequeñas diferencias generar mayores errores. Como se explico en el parrafo anterior, estos errores se amplifican a medida que el número de pasos del programa computacional es mayor, de tal forma que para ciertos algoritmos el error puede aumentar de una forma logarítmica, exponencial e inclusive factorial.
 
 ##16 de Junio:
 
@@ -135,6 +142,10 @@ Para usar *curve_fit*: definir una función cuyo primer argumento es la variable
 Como ejemplo se usó esta función para hallar la magnitud del momento magnético del imán. La gráfica del ajuste obtenido con *curve_fit* es:
 
 ![](https://raw.githubusercontent.com/deolaya1318/MC/master/python/exercises/momento.png)
+
+Una vez se ha encontrado el valor de la constante *a* del modelo del campo magnético en función de la distancia, debemos realizar las conversiones requeridas para hallar el valor del momento dipolar magnético.
+
+El momento dipolar magnético a lo largo del eje es: 1.41219664267 $Am^2$
 
 _Proyecto final: Realizar análisis de imagenes de nanopartículas producidas en AFM. Analizar la dinámica de un sistema caótico a partir de graficas del espacio de fase de una variable que se pueda medir en el sistema._
 
